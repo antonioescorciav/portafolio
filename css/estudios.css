@@ -1,0 +1,104 @@
+
+/*Sección 5: estudios*/
+
+.estudios {
+    background:linear-gradient(to left, #60AFFE, 60%, #bed6f0);
+    border-bottom: solid 0.2rem palegoldenrod;
+}
+
+
+.estudios__diferenciales {
+    margin: 2rem;
+    padding: .8rem;
+    text-align: center;
+}
+
+.estudios__titulo {
+    font-size: 2rem;
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.estudios__card {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 1.8rem;
+    padding: .5rem;
+    justify-items: center;
+}
+
+
+.estudios__institucion {
+    
+    display: grid;
+    width: 75%;
+    box-shadow: -0.8rem .7rem 0.1rem rgb(0, 0, 0, 0.20);
+    grid-template-rows: 52% 48%;
+    justify-items: center;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0.15rem solid;
+    
+}
+
+.estudios__institucion___parrafo {
+    background: linear-gradient(to left, #9cb2ce, 40%, #C6E2FF);
+    width: 100%;   
+}
+
+.estudios__institucion___parrafo--content {
+    height: 100%;
+}
+
+.estudios__institucion___parrafo--titulo {
+    
+    margin-bottom: 0.5rem;
+    padding: .2rem;
+    font-weight: 900;
+    border-top: .15rem solid;
+    border-bottom: .15rem solid ;
+    
+}
+
+.estudios__institucion___parrafo--text {
+    display: block;
+    width: 100%;
+    height: 50%;
+    font-size: .9rem;
+}
+
+.estudios__imagen {
+    width: 35%;
+    height: 90%;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width:768px){
+    .estudios__card{
+        width: 15rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat (1, 1fr);
+    }
+
+    .estudios__diferenciales{
+        margin: 1rem;
+    }
+
+    .estudios__institucion{
+        width: 80%;
+        height: 80%;
+        grid-template-rows: 35% 65%;
+    }
+
+    .estudios__imagen {
+        width: 25%;
+        margin-bottom: 5.9rem;
+    }
+
+    .estudios__institucion___parrafo--text {
+        display: block;
+        width: 100%;
+        height: 50%;
+        font-size: .8rem;
+    }
+}

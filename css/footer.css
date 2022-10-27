@@ -1,0 +1,20 @@
+
+
+/*footer*/
+.pie-pagina {
+    
+    height: 7vh;
+    color: #fefdfb;
+    background-color: #1e1109;
+    padding: 0.8rem 0;  
+    text-align: center;
+    border-top: solid 0.2rem palegoldenrod;
+}
+
+.pie-pagina__parrafo {
+    padding: ;
+}
+
+@media screen and (max-width: 758px){
+    
+}

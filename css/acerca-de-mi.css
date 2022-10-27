@@ -1,0 +1,56 @@
+/* sección 2: acerca de mí */
+
+.acerca-de-mi {
+    background:  #2779a7;
+    color: #fefdfb;
+    border-bottom: solid 0.2rem palegoldenrod; 
+}
+
+.acerca-de-mi__box {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border-bottom: solid 0.2rem palegoldenrod; 
+}
+
+.acerca-de-mi__avatar{
+    padding: 0.8rem;
+    margin-right: 1.5rem;
+}
+
+
+.acerca-de-mi__titulo {
+    font-weight: bold;
+    text-align: justify;
+    margin: .8rem;
+}
+
+
+.acerca-de-mi__parrafo {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    height: 15rem;
+    text-align: justify;
+    line-height: 1.7rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .acerca-de-mi__avatar {
+        margin: .2rem;
+    }
+
+    .acerca-de-mi__box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center
+    }
+
+    .acerca-de-mi__parrafo {
+        padding: 2rem;
+        width: 20rem;
+        margin-bottom: .8rem;
+    }
+}

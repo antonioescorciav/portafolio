@@ -1,0 +1,85 @@
+/* sección 1: resumen acerca de mí */
+.resumen {
+    background: url(../img/tecnologia.jpg) no-repeat;
+    color: #eefee8;
+    text-align: center;
+    padding: 1.8rem;
+    border-bottom: solid 0.2rem palegoldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resumen__foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 400px;
+}
+
+.resumen__nombre {
+    font-size: 2rem;
+}
+.resumen__nombre, .resumen__profesion {
+    margin: 0.5rem;
+}
+
+.resumen__img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.resumen__img:hover {
+    width: 7rem;
+    height: 7rem;
+    transition: .2s;
+}
+
+.resumen__img:not(:hover) {
+    width: 6rem;
+    height: 6rem;
+    transition: .2s;
+}
+
+.resumen__box {
+    width: 28rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .resumen {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+    }
+
+    .resumen__foto {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .resumen__img {
+        margin: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .resumen__box {
+        justify-content: center;
+        margin: .2rem;
+    }
+
+    .resumen__img:hover {
+        width: 4rem;
+        height: 4rem;
+        transition: .2s;
+    }
+
+    .resumen__img:not(:hover) {
+        width: 3rem;
+        height: 3rem;
+        transition: .2s;
+    }
+
+}

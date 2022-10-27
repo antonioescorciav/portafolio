@@ -1,0 +1,89 @@
+/*Sección 4: skills*/
+
+.habilidades {
+    background: linear-gradient(#2779a7, #89d7fcd2);
+    border-bottom: solid 0.2rem palegoldenrod;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around; 
+}
+
+.skills__box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    align-content: center;
+    align-items: center;
+    height: 11rem;
+    border: solid rgb(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.skills__capacidad {
+    width: 5rem;
+    padding: 1.1rem;
+}
+
+.skills__subtitulo {
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+.skills__lista {
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    justify-content: space-evenly; 
+    
+}
+
+.skills__element {
+        
+    color: black;
+    margin: .5rem;
+    width: 9.5rem;
+    background-color:rgb(186, 213, 245);
+    border: solid;
+}
+
+.skills__element:hover{
+    background-color: #2eeb1d;
+}
+
+.skills__label {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.skills__imagen {
+    width: 5.5rem;
+    padding: 1.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+    .habilidades{
+    flex-wrap: wrap;
+  }
+
+    .skills__lista {
+      width: 400rem;
+  }
+
+  .skills__element {
+    margin-top: 1.8rem;
+    width: 8rem;
+  }
+
+  .skills__imagen {
+    width: 4.3rem;
+  }
+}

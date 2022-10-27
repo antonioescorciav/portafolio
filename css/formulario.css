@@ -1,0 +1,120 @@
+/*sección 6: contactos */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(30deg,#C6E2FF, #30cdfd, #fefdfb, #212450);
+    background-size: 400%;
+    animation: fondo 12s infinite alternate;
+    --ok:#049e09; 
+    --error:#db1515; 
+}
+
+@keyframes fondo {
+    0% {background-position: 50%;}
+    100% {background-position: 100%;}
+}
+
+.formulario__box{
+    margin: 2rem;
+    background:  url(../img/fondo-formulario.jpg) no-repeat;
+    background-size: 350%;
+    color: #fefdfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border: .4rem solid #2779a7;
+    width: 50vw;
+}
+
+.formulario__titulo {
+   margin-top: 2rem;
+}
+
+.formulario__contenido {
+    margin: 2rem;
+}
+
+.formulario__box [required]:valid{
+    border: .18rem solid var(--ok);
+}
+.formulario__box [required]:invalid{
+    border: 0.18rem solid var(--error);
+}
+
+.textarea {
+    resize: none;
+    width: 44vw;
+    height: 20vh;
+}
+
+.formulario__contenido--input {
+    width: 36rem;
+    height: 1.5rem;
+}
+
+.formulario__contenido--input:hover{
+    width: 36rem;
+    height: 2rem;
+    transition: .2s;
+}
+
+.formulario__contenido--input:not(:hover){
+    width: 36rem;
+    height: 1.5rem;
+    transition: .2s;
+}
+
+.error {
+    color: #fefdfb;
+    background-color: var(--error);
+    margin: .1rem;
+    text-align: center;
+}
+
+.error.activo {
+    display: block;
+    visibility: visible;
+}
+
+.none {
+    display: none;
+}
+
+.loader {
+    margin-top: .8rem;
+}
+
+.respuesta {
+    margin-top: .8rem;
+}
+
+
+
+@media screen and (max-width: 758px){
+    .formulario{
+        background-size: 100%;
+    }
+
+    .formulario__box {
+        background-size: 350vh;
+    }
+    
+    .formulario__contenido--input {
+        width: 10rem;
+        height: .5rem;
+    }
+
+    .formulario__contenido--input:hover{
+        width: 10.5rem;
+        height: 2rem;
+        transition: .2s;
+    }
+
+    .formulario__contenido--input:not(:hover){
+        width: 10rem;
+        height: .8rem;
+        transition: .2s;
+    }
+}
