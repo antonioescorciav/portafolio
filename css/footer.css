@@ -3,7 +3,7 @@
 /*footer*/
 .pie-pagina {
     
-    height: 7vh;
+    /* height: 7vh; */
     color: #fefdfb;
     background-color: #1e1109;
     padding: 0.8rem 0;  
@@ -12,7 +12,7 @@
 }
 
 .pie-pagina__parrafo {
-    padding: ;
+    /* padding: ; */
 }
 
 @media screen and (max-width: 758px){

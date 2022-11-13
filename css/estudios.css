@@ -7,6 +7,7 @@
 }
 
 
+
 .estudios__diferenciales {
     margin: 2rem;
     padding: .8rem;
@@ -37,9 +38,15 @@
     grid-template-rows: 52% 48%;
     justify-items: center;
     background-color: rgb(255, 255, 255, 0.4);
-    border: 0.15rem solid;
-    
+    border: 0.15rem solid;   
 }
+
+/* cards hover  */
+.estudios__institucion:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-out;
+}
+
 
 .estudios__institucion___parrafo {
     background: linear-gradient(to left, #9cb2ce, 40%, #C6E2FF);
