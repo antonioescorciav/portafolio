@@ -3,6 +3,16 @@
 .habilidades {
     background: linear-gradient(#2779a7, #89d7fcd2);
     border-bottom: solid 0.2rem palegoldenrod;
+    /* display:flex;
+    justify-content:center; */
+}
+
+/* TITULO DE SKILLS */
+.habilidades>h2{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding:4rem 2rem 1rem;
 }
 
 .skills {
